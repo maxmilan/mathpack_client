@@ -1,0 +1,7 @@
+= simple_form_for :integrate, remote: true, url: { action: :solve }, html: { class: 'form-inline', id: 'integral-form' } do |f|
+  = f.input :function, required: false, label: t('.integral')
+  = f.input :from, as: :decimal, required: false, label: t('.from')
+  = f.input :to, as: :decimal, required: false, label: t('.to')
+  = f.button :submit, t('.submit'), class: 'btn btn-primary'
+
+div#integrate-result

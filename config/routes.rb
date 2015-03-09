@@ -1,14 +1,14 @@
 MathpackClient::Application.routes.draw do
-  get "home/index"
-  get "home/integrate"
-  get "home/solve"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'home#index'
 
-  get 'home/integrate'
+  get 'home/index'
+
+  post 'integration/solve'
+  get 'integration/integral'
   post 'home/solve'
 
   # Example of regular route:

@@ -1,0 +1,10 @@
+ru:
+  integration:
+    integral:
+      integral: 'Интеграл'
+      from: 'от'
+      submit: 'Вычислить'
+      to: 'до'
+  layouts:
+    navigation_links:
+      integration: 'Интегрирование'

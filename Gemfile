@@ -36,8 +36,15 @@ gem 'pry-rails', group: :development
 
 gem 'slim'
 
+gem 'bootstrap-sass', '~> 3.3.3'
+
 gem 'simple_form'
 
+gem 'rails_layout'
+
+gem 'mathpack', '>= 0.4.2'
+
+gem 'html2slim', group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
