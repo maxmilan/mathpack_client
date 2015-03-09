@@ -1,0 +1,5 @@
+= simple_form_for :integrate, remote: true, url: { action: :solve } do |f|
+  = f.input :function, required: false
+  = f.input :from, as: :decimal, required: false
+  = f.input :to, as: :decimal, required: false
+  = f.button :submit
