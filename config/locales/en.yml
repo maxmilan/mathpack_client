@@ -8,3 +8,7 @@ en:
   layouts:
     navigation_links:
       integration: Integration
+      plot: Plot
+  plot:
+    function:
+      draw: Draw

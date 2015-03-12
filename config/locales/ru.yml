@@ -8,3 +8,7 @@ ru:
   layouts:
     navigation_links:
       integration: 'Интегрирование'
+      plot: 'График'
+  plot:
+    function:
+      draw: 'Построить'

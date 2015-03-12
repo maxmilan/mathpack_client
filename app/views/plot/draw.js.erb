@@ -1,10 +1,10 @@
 $(function () {
   new Highcharts.Chart({
-    chart: { renderTo: 'orders_chart' },
-    title: { text: 'Orders by Day' },
+    chart: { renderTo: 'function_plot' },
+    title: { text: 'sin(x)' },
     xAxis: { tickInterval: 0.5 },
     yAxis: {
-      title: { text: 'Dollars'}
+      title: { text: 'y'}
     },
     series: [{
       data: <%= data %>,
