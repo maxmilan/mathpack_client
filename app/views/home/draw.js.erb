@@ -1,0 +1,14 @@
+$(function () {
+  new Highcharts.Chart({
+    chart: { renderTo: 'orders_chart' },
+    title: { text: 'Orders by Day' },
+    xAxis: { tickInterval: 0.5 },
+    yAxis: {
+      title: { text: 'Dollars'}
+    },
+    series: [{
+      data: <%= data %>,
+      pointStart: 0
+    }]
+  });
+});

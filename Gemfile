@@ -48,4 +48,6 @@ gem 'html2slim', group: :development
 
 gem 'rails_12factor'
 
+gem 'highcharts-rails', '~> 3.0.0'
+
 ruby '2.1.3'
