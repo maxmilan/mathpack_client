@@ -50,4 +50,6 @@ gem 'rails_12factor'
 
 gem 'highcharts-rails', '~> 3.0.0'
 
+gem 'zeroclipboard-rails'
+
 ruby '2.1.3'

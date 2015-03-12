@@ -1,5 +1,6 @@
 /*
  *= require_self
+ *= require sprockets-octicons
  *= require_tree .
  */
 @import "bootstrap-sprockets";
@@ -7,4 +8,13 @@
 
 #integral-form{
   margin-top: 30px;
+}
+
+#d_clip_button{
+  margin-top: -26px;
+  margin-left: -3px;
+}
+
+#integral-answer{
+  margin-top: 50px;
 }
