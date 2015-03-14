@@ -1,0 +1,7 @@
+var answer = <%= answer %>
+var result = '<strong>' + '<%= I18n.t('.result') %>' + ':</strong><br>' + '(' + answer[0];
+for(i=1;i<answer.length;++i){
+  result += '; ' + answer[i];
+}
+result += ')';
+$('#sle-solution').html(result);

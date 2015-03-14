@@ -12,3 +12,9 @@ ru:
   plot:
     function:
       draw: 'Построить'
+  result: 'Решение'
+  sle:
+    index:
+      number: 'Размерность'
+    matrix:
+      solve: 'Решить'

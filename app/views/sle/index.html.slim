@@ -1,0 +1,5 @@
+= simple_form_for :matrix, url: sle_solve_url, remote: true do |f|
+  = f.input :number, collection: (2..10).to_a, required: false, selected: 2, input_html: { data: { change_dim_url: sle_change_dimension_url } }, label: t('.number')
+  .wrapper = render 'matrix', number: 2
+
+#sle-solution

@@ -1,0 +1,13 @@
+= simple_form_for :matrix, url: sle_solve_url, remote: true do |f|
+  table#matrix-table
+    - for i in 0...number do
+      tr
+      - for j in 0...number do
+        td
+          = f.input "matrix_#{i}_#{j}".to_sym, input_html: { class: 'matrix-cell'}, label: false, as: :decimal
+
+  table
+    - for i in 0...number do
+       tr
+         = f.input "f_#{i}".to_sym, input_html: { class: 'matrix-cell'}, label: false, as: :decimal
+  = f.submit t('.solve.'), class: 'btn btn-primary', id: 'solve-sle-button'

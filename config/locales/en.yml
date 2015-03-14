@@ -12,3 +12,9 @@ en:
   plot:
     function:
       draw: Draw
+  result: Solution
+  sle:
+    index:
+      number: Dimension
+    matrix:
+      solve: Solve

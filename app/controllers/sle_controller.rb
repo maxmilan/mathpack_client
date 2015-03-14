@@ -1,5 +1,6 @@
-class HomeController < ApplicationController
+class SleController < ApplicationController
   def index
+
   end
 
   def change_dimension
