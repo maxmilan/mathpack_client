@@ -9,6 +9,7 @@ en:
     navigation_links:
       integration: Integration
       plot: Plot
+      sle: Sle
   plot:
     function:
       draw: Draw

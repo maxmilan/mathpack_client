@@ -6,8 +6,27 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+select#matrix_number{
+  width: 60px;
+}
+
 #integral-form{
   margin-top: 30px;
+}
+
+#plot-form{
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 #d_clip_button{

@@ -9,6 +9,7 @@ ru:
     navigation_links:
       integration: 'Интегрирование'
       plot: 'График'
+      sle: 'СЛАУ'
   plot:
     function:
       draw: 'Построить'

@@ -1,14 +1,15 @@
 $(function () {
   new Highcharts.Chart({
     chart: { renderTo: 'function_plot' },
-    title: { text: 'sin(x)' },
-    xAxis: { tickInterval: 0.5 },
+    title: { text: '<%= function_name %>' },
+    xAxis: { tickInterval: <%= tick %> },
     yAxis: {
       title: { text: 'y'}
     },
     series: [{
       data: <%= data %>,
-      pointStart: 0
+      pointStart: 0,
+      name: '<%= function_name %>'
     }]
   });
 });
