@@ -1,1 +1,3 @@
-
+= form_tag home_csv_path, multipart: true, remote: true do
+  = file_field_tag :file, class: 'file'
+  = submit_tag "Import", class: 'btn btn-primary'

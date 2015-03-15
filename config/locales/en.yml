@@ -12,6 +12,9 @@ en:
       sle: Sle
   plot:
     function:
+      from: from
+      function: Function
+      to: to
       draw: Draw
   result: Solution
   sle:

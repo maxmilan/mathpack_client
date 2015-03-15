@@ -12,6 +12,9 @@ ru:
       sle: 'СЛАУ'
   plot:
     function:
+      from: 'от'
+      function: 'Функция'
+      to: 'до'
       draw: 'Построить'
   result: 'Решение'
   sle:

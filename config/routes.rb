@@ -9,4 +9,5 @@ MathpackClient::Application.routes.draw do
   get 'sle/index'
   post 'sle/change_dimension'
   post 'sle/solve'
+  post 'home/csv'
 end

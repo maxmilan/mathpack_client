@@ -48,8 +48,12 @@ gem 'html2slim', group: :development
 
 gem 'rails_12factor'
 
-gem 'highcharts-rails', '~> 3.0.0'
+gem 'highcharts-rails', '~> 4.0.0'
 
 gem 'zeroclipboard-rails'
+
+gem 'bootstrap-filestyle-rails'
+
+gem 'jquery-turbolinks'
 
 ruby '2.1.3'
