@@ -10,4 +10,5 @@ MathpackClient::Application.routes.draw do
   post 'sle/change_dimension'
   post 'sle/solve'
   post 'home/csv'
+  post 'plot/csv'
 end

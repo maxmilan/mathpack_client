@@ -7,6 +7,14 @@ class SleController < ApplicationController
   end
 
   def solve
+    matrix, f = sle_parameters(params)
+    answer = Mathpack::SLE.solve(matrix: matrix, f: f)
+    render 'solve', locals: { answer: answer }
+  end
+
+  private
+
+  def sle_parameters(params)
     number = params[:matrix][:number].to_i
     matrix = Array.new(number) { Array.new(number) }
     f = Array.new(number)
@@ -18,7 +26,6 @@ class SleController < ApplicationController
         f[parts[1].to_i] = value.to_f
       end
     end
-    answer = Mathpack::SLE.solve(matrix: matrix, f: f)
-    render 'solve', locals: { answer: answer }
+    [matrix, f]
   end
 end

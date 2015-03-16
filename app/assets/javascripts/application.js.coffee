@@ -1,4 +1,5 @@
 //= require jquery
+//= require jquery.remotipart
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets

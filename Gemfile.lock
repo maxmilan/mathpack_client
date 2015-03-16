@@ -64,7 +64,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mathpack (0.4.2)
+    mathpack (0.4.3)
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (4.7.5)
@@ -102,6 +102,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    remotipart (1.2.1)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -155,12 +156,13 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
-  mathpack (>= 0.4.2)
+  mathpack (= 0.4.3)
   pg
   pry-rails
   rails (= 4.0.0)
   rails_12factor
   rails_layout
+  remotipart (~> 1.0)
   sass-rails (~> 4.0.0)
   sdoc
   simple_form
