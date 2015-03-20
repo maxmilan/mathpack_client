@@ -3,7 +3,7 @@ class IntegrationController < ApplicationController
   end
 
   def solve
-    result = Mathpack::Integration.integrate(from: parse_interval(integrate_params[:from]), to: parse_interval(integrate_params[:to]), &parse_function(integrate_params[:function]))
+    result = Mathpack::Integration.integrate(from: parse_interval(integrate_params[:from]), to: parse_interval(integrate_params[:to]), &Mathpack::IO.parse_function(integrate_params[:function]))
     render 'solve', locals: { result: result }
   end
 
@@ -11,13 +11,6 @@ class IntegrationController < ApplicationController
 
   def integrate_params
     params.require(:integrate).permit(:function, :from, :to)
-  end
-
-  def parse_function(function)
-    function.gsub!('x', 'var')
-    function.gsub!('evarp', 'exp')
-    calculate = -> str { ->x { eval str.gsub('var', x.to_s) } }
-    calculate.(function)
   end
 
   def parse_interval(number)

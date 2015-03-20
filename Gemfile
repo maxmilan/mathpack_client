@@ -33,7 +33,7 @@ gem 'simple_form'
 
 gem 'rails_layout'
 
-gem 'mathpack', '0.4.3'
+gem 'mathpack', '0.4.5'
 
 gem 'rails_12factor'
 

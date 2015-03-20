@@ -3,7 +3,7 @@ class PlotController < ApplicationController
   end
 
   def draw
-    f = parse_function(plot_params[:function])
+    f = Mathpack::IO.parse_function(plot_params[:function])
     x = Mathpack::Approximation.generate_nodes(from: plot_params[:from].to_f, to: plot_params[:to].to_f, step: 0.125)
     y = x.map{ |x| f.call(x) }
     render 'draw', locals: { data: collect_data(x, y).to_json, function_name: plot_params[:function], tick: calculate_tick(x) }
@@ -26,13 +26,6 @@ class PlotController < ApplicationController
 
   def plot_params
     params.require(:plot).permit(:function, :from, :to)
-  end
-
-  def parse_function(function)
-    func = function.gsub('x', 'var')
-    func.gsub!('evarp', 'exp')
-    calculate = -> str { ->x { eval str.gsub('var', x.to_s) } }
-    calculate.(func)
   end
 
   def calculate_tick(x)
