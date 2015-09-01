@@ -47,4 +47,4 @@ gem 'jquery-turbolinks'
 
 gem 'remotipart', '~> 1.0'
 
-ruby '2.1.5'
+ruby '2.1.3'
