@@ -10,6 +10,7 @@ en:
       integration: Integration
       plot: Plot
       sle: Sle
+      vkontakte: Vkontakte
   plot:
     function:
       from: from

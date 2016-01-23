@@ -47,4 +47,10 @@ gem 'jquery-turbolinks'
 
 gem 'remotipart', '~> 1.0'
 
+gem 'vkontakte_api'
+
+gem 'visjs-rails'
+
+gem 'pusher'
+
 ruby '2.1.5'

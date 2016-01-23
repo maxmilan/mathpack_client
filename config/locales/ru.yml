@@ -10,6 +10,7 @@ ru:
       integration: 'Интегрирование'
       plot: 'График'
       sle: 'СЛАУ'
+      vkontakte: 'Вконтакте'
   plot:
     function:
       from: 'от'

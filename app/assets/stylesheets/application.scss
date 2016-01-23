@@ -5,6 +5,7 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "vis";
 
 body{
   font-family: ABeeZee;
@@ -68,4 +69,8 @@ table#matrix-table{
 
 form#table-function-download{
   margin-top: 10px;
+}
+
+#friends-graph {
+  height: 700px;
 }

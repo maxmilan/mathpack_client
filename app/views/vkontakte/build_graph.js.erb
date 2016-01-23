@@ -1,0 +1,6 @@
+$(function(){
+  var nodes = new vis.DataSet(<%= nodes.html_safe %>);
+  var edges = new vis.DataSet(<%= edges.html_safe %>);
+	var container = $('#friends-graph')[0];
+  var network = new vis.Network(container, {nodes: nodes, edges: edges}, {}); 
+});
