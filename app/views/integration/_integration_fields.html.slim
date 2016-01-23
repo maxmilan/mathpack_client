@@ -1,0 +1,11 @@
+= simple_form_for integration_form, remote: true, url: { action: :solve }, html: { class: 'form-inline', id: 'integral-form' } do |f|
+  = f.input :function, required: false
+  = f.input :from, required: false
+  = f.input :to, required: false
+  = f.button :submit, class: 'btn btn-primary'
+
+#integral-answer.input-group
+  input type="text" class="form-control" id="integration-result" placeholder="#{t('result')}" value="#{integration_form.result}"
+  span.input-group-btn
+  button class="my_clip_button" data-clipboard-target="integration-result" id="d_clip_button" class="btn btn-success"
+    span.octicon.octicon-clippy

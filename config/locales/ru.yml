@@ -1,15 +1,26 @@
 ru:
-  integration:
-    integral:
-      integral: 'Интеграл'
-      from: 'от'
-      submit: 'Вычислить'
-      to: 'до'
+  activemodel:
+    errors:
+      models:
+        integration_form:
+          attributes:
+            function:
+              invalid_format: 'Функция введена неверно'
+  helpers:
+    submit:
+      integration_form:
+        create: 'Вычислить'
   layouts:
     navigation_links:
       integration: 'Интегрирование'
       plot: 'График'
-      sle: 'СЛАУ'
+      sle: 'СЛЕ'
+  simple_form:
+    labels:
+      integration_form:
+        from: 'от'
+        function: 'Интегрировать'
+        to: 'до'
   plot:
     function:
       from: 'от'

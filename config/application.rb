@@ -12,5 +12,7 @@ module MathpackClient
   class Application < Rails::Application
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.assets.precompile += %w(*.svg *.eot *.woff *.ttf)
+
+    config.i18n.default_locale = :ru
   end
 end

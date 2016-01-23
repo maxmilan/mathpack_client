@@ -1,23 +1,18 @@
 class IntegrationController < ApplicationController
+  respond_to :js, only: :solve
+
   def integrate
+    @integration_form = IntegrationForm.new
   end
 
   def solve
-    result = Mathpack::Integration.integrate(from: parse_interval(integrate_params[:from]), to: parse_interval(integrate_params[:to]), &Mathpack::IO.parse_function(integrate_params[:function]))
-    render 'solve', locals: { result: result }
+    @integration_form = IntegrationForm.new(integrate_params)
+    @integration_form.process
   end
 
   private
 
   def integrate_params
-    params.require(:integrate).permit(:function, :from, :to)
-  end
-
-  def parse_interval(number)
-    if number.index('inf')
-      number[0].eql?('-') ? -Float::INFINITY : Float::INFINITY
-    else
-      number.to_f
-    end
+    params.require(:integration_form).permit(:function, :from, :to)
   end
 end

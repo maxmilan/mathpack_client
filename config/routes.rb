@@ -5,7 +5,7 @@ MathpackClient::Application.routes.draw do
   post 'integration/solve'
   get 'plot/function'
   post 'plot/draw'
-  get 'integration/integral'
+  get 'integration/integrate'
   get 'sle/index'
   post 'sle/change_dimension'
   post 'sle/solve'

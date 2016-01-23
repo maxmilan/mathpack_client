@@ -47,4 +47,6 @@ gem 'jquery-turbolinks'
 
 gem 'remotipart', '~> 1.0'
 
+gem 'virtus'
+
 ruby '2.1.5'

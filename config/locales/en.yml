@@ -1,15 +1,26 @@
 en:
-  integration:
-    integral:
-      integral: Integrate
-      from: from
-      submit: Count
-      to: to
+  activemodel:
+    errors:
+      models:
+        integration_form:
+          attributes:
+            function:
+              invalid_format: Invalid function format
+  helpers:
+    submit:
+      integration_form:
+        create: Count
   layouts:
     navigation_links:
       integration: Integration
       plot: Plot
       sle: Sle
+  simple_form:
+    labels:
+      integration_form:
+        from: from
+        function: Integrate
+        to: to
   plot:
     function:
       from: from
