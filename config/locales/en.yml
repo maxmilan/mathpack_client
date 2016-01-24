@@ -16,6 +16,8 @@ en:
         create: Count
       plot_form:
         create: Draw
+      sle_form:
+        create: Solve
   navigation:
     integration: Integration
     plot: Plot
@@ -33,9 +35,6 @@ en:
         from: form
         function: Plot
         to: to
-  result: Solution
-  sle:
-    index:
-      number: Dimension
-    matrix:
-      solve: Solve
+      sle_form:
+        dimension: Dimension
+  result: Solution 

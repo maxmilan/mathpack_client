@@ -1,1 +1,3 @@
-$('.wrapper').html('<%= j render('matrix', number: number) %>');
+$(function () {
+  $('#sle_fields').html('<%= j render('sle_fields', sle_form: @sle_form) %>');
+});

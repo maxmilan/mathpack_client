@@ -16,6 +16,8 @@ ru:
         create: 'Вычислить'
       plot_form:
         create: 'Построить'
+      sle_form:
+        create: 'Решить'
   navigation:
     integration: 'Интегрирование'
     plot: 'График'
@@ -33,9 +35,6 @@ ru:
         from: 'от'
         function: 'График'
         to: 'до'
+      sle_form:
+        dimension: 'Размерность'
   result: 'Решение'
-  sle:
-    index:
-      number: 'Размерность'
-    matrix:
-      solve: 'Решить'

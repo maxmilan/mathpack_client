@@ -12,11 +12,14 @@
 jQuery ->
   window.i18n = translations['ru']
 
-  $('form.matrix').on 'change', 'select#matrix_number', ->
-    number = $(@).val()
+  $('#sle_fields').on 'change', 'select', ->
+    dimension = $(@).val()
     send_url = $(@).data('change-dim-url')
-    $.post send_url, dimension: number
-    $('#sle-solution').html('')
+    sle_form = {}
+    $formInputs = $('#sle_fields').find("input[id^='sle_form']")
+    for input in $formInputs
+      sle_form[input.name] = input.value
+    $.post send_url, dimension: dimension, sle_form: sle_form
 
   $(':file').filestyle
     input: false

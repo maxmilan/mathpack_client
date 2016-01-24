@@ -1,0 +1,19 @@
+= simple_form_for sle_form, url: sle_solve_url do |f|
+  = f.input :dimension, collection: (2..SleForm::MAX_DIMENSION).to_a, required: false, input_html: { data: { change_dim_url: sle_change_dimension_url }, id: 'matrix_dimension' }
+  table#matrix-table
+    - for i in 0...f.object.dimension do
+      tr
+        - for j in 0...f.object.dimension do
+          td
+            = f.input "matrix_#{i}_#{j}".to_sym, input_html: { class: 'matrix-cell' }, label: false, as: :decimal
+
+  table
+    - for i in 0...f.object.dimension do
+      tr
+        = f.input "f_#{i}".to_sym, input_html: { class: 'matrix-cell' }, label: false, as: :decimal
+
+  = f.button :submit, class: 'btn btn-primary', id: 'solve-sle-button'
+
+- if sle_form.result
+  #sle_solution
+    = "(#{sle_form.result.join('; ')})"
