@@ -1,7 +1,7 @@
 class PlotController < ApplicationController
   # respond_to :js, only: :draw
 
-  def plot
+  def new
     @plot_form = PlotForm.new
   end
 

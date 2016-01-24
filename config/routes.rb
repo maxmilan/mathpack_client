@@ -3,10 +3,10 @@ MathpackClient::Application.routes.draw do
 
   get 'home/index'
   post 'integration/solve'
-  get 'plot/plot'
+  get 'plot/new'
   post 'plot/draw'
-  get 'integration/integrate'
-  get 'sle/index'
+  get 'integration/new'
+  get 'sle/new'
   post 'sle/change_dimension'
   post 'sle/solve'
   post 'home/csv'

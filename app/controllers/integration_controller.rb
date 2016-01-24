@@ -1,7 +1,7 @@
 class IntegrationController < ApplicationController
   respond_to :js, only: :solve
 
-  def integrate
+  def new
     @integration_form = IntegrationForm.new
   end
 

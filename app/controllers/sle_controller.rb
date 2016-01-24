@@ -1,5 +1,5 @@
 class SleController < ApplicationController
-  def index
+  def new
   end
 
   def change_dimension
