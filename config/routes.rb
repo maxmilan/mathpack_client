@@ -3,7 +3,7 @@ MathpackClient::Application.routes.draw do
 
   get 'home/index'
   post 'integration/solve'
-  get 'plot/function'
+  get 'plot/plot'
   post 'plot/draw'
   get 'integration/integrate'
   get 'sle/index'

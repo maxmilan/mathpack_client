@@ -6,27 +6,33 @@ en:
           attributes:
             function:
               invalid_format: Invalid function format
+        plot_form:
+          attributes:
+            function:
+              invalid_format: Invalid function format
   helpers:
     submit:
       integration_form:
         create: Count
-  layouts:
-    navigation_links:
-      integration: Integration
-      plot: Plot
-      sle: Sle
+      plot_form:
+        create: Draw
+  navigation:
+    integration: Integration
+    plot: Plot
+    sle: Sle
+  other:
+    download: Download
+    download_from_csv: or download data from csv file
   simple_form:
     labels:
       integration_form:
         from: from
         function: Integrate
         to: to
-  plot:
-    function:
-      from: from
-      function: Function
-      to: to
-      draw: Draw
+      plot_form:
+        from: form
+        function: Plot
+        to: to
   result: Solution
   sle:
     index:

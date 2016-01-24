@@ -1,0 +1,5 @@
+= simple_form_for plot_form, remote: true, url: { action: :draw }, html: { class: 'form-inline', id: 'plot-form' } do |f|
+  = f.input :function, required: false
+  = f.input :from, required: false
+  = f.input :to, required: false
+  = f.button :submit, class: 'btn btn-primary'

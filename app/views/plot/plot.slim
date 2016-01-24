@@ -1,0 +1,9 @@
+#plot_fields
+  = render 'plot_fields', plot_form: @plot_form
+
+b = t('other.download_from_csv')
+= form_tag plot_csv_path, id: 'table-function-download', multipart: true, remote: true do
+  = file_field_tag :file, class: 'file'
+  = submit_tag t('other.download'), class: 'btn btn-primary'
+
+#function_plot

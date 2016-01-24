@@ -6,27 +6,33 @@ ru:
           attributes:
             function:
               invalid_format: 'Функция введена неверно'
+        plot_form:
+          attributes:
+            function:
+              invalid_format: 'Функция введена неверно'
   helpers:
     submit:
       integration_form:
         create: 'Вычислить'
-  layouts:
-    navigation_links:
-      integration: 'Интегрирование'
-      plot: 'График'
-      sle: 'СЛЕ'
+      plot_form:
+        create: 'Построить'
+  navigation:
+    integration: 'Интегрирование'
+    plot: 'График'
+    sle: 'СЛЕ'
+  other:
+    download: Загрузить
+    download_from_csv: или загрузите из csv файла
   simple_form:
     labels:
       integration_form:
         from: 'от'
         function: 'Интегрировать'
         to: 'до'
-  plot:
-    function:
-      from: 'от'
-      function: 'Функция'
-      to: 'до'
-      draw: 'Построить'
+      plot_form:
+        from: 'от'
+        function: 'График'
+        to: 'до'
   result: 'Решение'
   sle:
     index:

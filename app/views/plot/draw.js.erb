@@ -1,15 +1,22 @@
 $(function () {
-  new Highcharts.Chart({
-    chart: { renderTo: 'function_plot' },
-    title: { text: '<%= function_name %>' },
-    xAxis: { tickInterval: <%= tick %> },
-    yAxis: {
-      title: { text: 'y'}
-    },
-    series: [{
-      data: <%= data %>,
-      pointStart: 0,
-      name: '<%= function_name %>'
-    }]
-  });
+  $('#plot_fields').html('<%= j render('plot_fields', plot_form: @plot_form) %>');
+
+  <%- if @plot_form.valid? %>
+    new Highcharts.Chart({
+      chart: { renderTo: 'function_plot' },
+      title: { text: '<%= @plot_form.function %>' },
+      xAxis: { tickInterval: <%= @plot_form.tick %> },
+      yAxis: {
+        title: { text: 'y'}
+      },
+      series: [{
+        data: <%= @plot_form.data.to_json %>,
+        pointStart: 0,
+        name: '<%= @plot_form.function %>'
+      }]
+    });
+  $('#function_plot').show();
+  <%- else %>
+    $('#function_plot').hide();
+  <%- end %>
 });

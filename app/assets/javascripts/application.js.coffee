@@ -10,11 +10,14 @@
 //= require_tree .
 
 jQuery ->
-    $('form.matrix').on 'change', 'select#matrix_number', ->
-        number = $(@).val()
-        send_url = $(@).data('change-dim-url')
-        $.post send_url, dimension: number
-        $('#sle-solution').html('')
+  window.i18n = translations['ru']
 
-    $(':file').filestyle
-      input: false
+  $('form.matrix').on 'change', 'select#matrix_number', ->
+    number = $(@).val()
+    send_url = $(@).data('change-dim-url')
+    $.post send_url, dimension: number
+    $('#sle-solution').html('')
+
+  $(':file').filestyle
+    input: false
+    buttonText: i18n.choose_file
